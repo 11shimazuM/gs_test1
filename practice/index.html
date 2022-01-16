@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <button id="btn">戦闘開始</button>
+</div>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script>
+    'use.strict';
+    $("#btn").on(click,function(){
+        let enemy = 100;
+        window.alert = ("戦闘スタート！");
+
+        while (enemy > 0){
+            const attack = Math.foor(Math.random()*30)+1;
+            console.log('モンスターに' + attack + 'のダメージ！');
+            enemy -= attack; 
+        }       
+    });
+    console.log("モンスターを倒した！")
+    </script>
+
+</body>
+</html>
